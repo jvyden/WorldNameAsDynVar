@@ -10,13 +10,8 @@ public class WorldNameAsDynVar : ResoniteMod
     public override string Version => typeof(WorldNameAsDynVar).Assembly.GetName().Version?.ToString() ?? "0.0.0";
     public override string Link => "https://github.com/jvyden/" + nameof(WorldNameAsDynVar);
     
-    public static ModConfiguration? Config { get; private set; }
-    
     public override void OnEngineInit()
     {
-        Config = GetConfiguration();
-        Config?.Save(true);
-
         Engine.Current.OnReady += () =>
         {
             Engine.Current.WorldManager.WorldAdded += OnWorldAdded;

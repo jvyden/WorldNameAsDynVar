@@ -25,23 +25,8 @@
             <HintPath>$(GamePath)Libraries\ResoniteModLoader.dll</HintPath>
             <Private>False</Private>
         </Reference>
-        <Reference Include="HarmonyLib">
-            <HintPath>$(GamePath)rml_libs\0Harmony.dll</HintPath>
-            <HintPath Condition="Exists('$(GamePath)Libraries\0Harmony.dll')">$(GamePath)Libraries\0Harmony.dll</HintPath>
-            <HintPath Condition="Exists('$(GamePath)MonkeyLoader\0Harmony.dll')">$(GamePath)MonkeyLoader\0Harmony.dll</HintPath>
-            <HintPath Condition="Exists('$(GamePath)0Harmony.dll')">$(GamePath)0Harmony.dll</HintPath>
-            <Private>False</Private>
-        </Reference>
         <Reference Include="FrooxEngine">
             <HintPath>$(GamePath)FrooxEngine.dll</HintPath>
-            <Private>False</Private>
-        </Reference>
-        <Reference Include="Elements.Core">
-            <HintPath>$(GamePath)Elements.Core.dll</HintPath>
-            <Private>False</Private>
-        </Reference>
-        <Reference Include="Renderite.Shared">
-            <HintPath>$(GamePath)Renderite.Shared.dll</HintPath>
             <Private>False</Private>
         </Reference>
     </ItemGroup>
